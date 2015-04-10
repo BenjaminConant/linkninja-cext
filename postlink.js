@@ -15,9 +15,9 @@ function postLink() {
 	    	data: JSON.stringify(linkData),
 	    	contentType: "application/json; charset=utf-8",
 	    	dataType: "json",
-	    	success: function(data){alert(data);},
+	    	success: function(data){bkg.console.log(data);},
 	    	failure: function(errMsg) {
-	        	alert(errMsg);
+	        	bkg.console.log(errMsg);
 	    	}
 		});
 
