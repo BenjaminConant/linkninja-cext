@@ -9,7 +9,7 @@
   
   "version": "0.1",
   
-  "background": { "scripts": ["bower_components/jquery/dist/jquery.js","postlink.js"] },
+  "background": { "scripts": ["bower_components/jquery/dist/jquery.js", "postlink.js", "user.js"] },
   
   "icons": { 
               "16":"icon_16.png", 
@@ -18,9 +18,11 @@
       }, 
   "browser_action": {
     "default_icon": "icon_16.png"
+    // "default_popup": "login.html"
   },
   "permissions": [
     "activeTab",
+    "cookies",
     "http://localhost:9000/"
   ]
   
